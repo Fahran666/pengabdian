@@ -25,9 +25,9 @@ export const Route = createFileRoute("/")({
 });
 
 const BANNER_IMAGES = [
-  "https://placehold.co/1200x400/2a9d8f/ffffff?text=Selamat+Datang+di+Jakarta+Mengabdi",
-  "https://placehold.co/1200x400/e9c46a/000000?text=Mari+Berkolaborasi+Bersama",
-  "https://placehold.co/1200x400/e76f51/ffffff?text=Wujudkan+Dampak+Positif",
+  "/banner1.jpeg",
+  "/banner2.jpeg",
+  "/banner3.jpeg",
 ];
 
 function NewsPage() {
