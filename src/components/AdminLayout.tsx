@@ -1,14 +1,16 @@
 import { Link, useNavigate, useRouterState } from "@tanstack/react-router";
-import { LayoutDashboard, Newspaper, LogOut } from "lucide-react";
+import { LayoutDashboard, Newspaper, LogOut, Map } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { useEffect } from "react";
 import { Loader2 } from "lucide-react";
 
+// Di sini gw tambahin Manage Journeys pakai icon Map
 const items = [
   { title: "Dashboard", to: "/admin/dashboard", icon: LayoutDashboard },
   { title: "Manage News", to: "/admin/news", icon: Newspaper },
+  { title: "Manage Journeys", to: "/admin/journeys", icon: Map },
 ] as const;
 
 export function AdminLayout({ children, title }: { children: React.ReactNode; title: string }) {

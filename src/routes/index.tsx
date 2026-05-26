@@ -90,7 +90,8 @@ function NewsPage() {
 
       {/* BANNER CAROUSEL */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 mb-20">
-        <div className="relative group overflow-hidden rounded-3xl shadow-lg aspect-[21/9] sm:aspect-[3/1] bg-muted">
+        {/* Di sini perubahannya: h-[500px] untuk HP, md:h-[960px] untuk Desktop */}
+        <div className="relative group overflow-hidden rounded-3xl shadow-lg w-full h-[500px] md:h-[960px] bg-muted">
           <img 
             src={BANNER_IMAGES[currentBanner]} 
             alt="Banner Jakarta Mengabdi" 

@@ -239,6 +239,9 @@ function ManageNews() {
 
             <div className="space-y-2">
               <Label>Unggah Dokumentasi (Bisa pilih lebih dari satu)</Label>
+              <p className="text-[13px] text-muted-foreground mb-2">
+                *Rekomendasi ukuran: Rasio 16:9 (minimal 848 x 477 pixel) agar gambar proporsional dan tidak terpotong.
+              </p>
               <label className="flex cursor-pointer items-center justify-center gap-2 rounded-md border border-dashed border-border bg-muted/30 px-4 py-6 text-sm text-muted-foreground hover:bg-muted transition-colors">
                 {uploading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Upload className="h-4 w-4" />}
                 <span>{uploading ? "Mengunggah gambar..." : "Klik untuk pilih file gambar"}</span>
